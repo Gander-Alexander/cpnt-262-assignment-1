@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: cornsilk;
+}
+
+ul {
+    display: flex;
+    background-color: rgb(216, 210, 187);
+    height: 10vh;
+    flex-direction: column;
+}
+
+
+
+li {
+    animation-name: animateIn;
+    animation-duration: 300ms;
+    animation-delay: calc(var(--animation-order) * 200ms);
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes animateIn {
+    0% {
+      opacity: 0;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+  }
+
+  footer {
+      position: absolute;
+      bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        background-color: rgb(216, 210, 187);
+        height: 8.3em;
+        width: 100vw;
+  }
+  
+  .copyright {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin-top: 1.8em;
+   color: rgb(75, 67, 67);
+  }
