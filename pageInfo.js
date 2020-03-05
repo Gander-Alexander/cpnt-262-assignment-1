@@ -13,7 +13,7 @@ const pageInfo = {
   },
   register: {
     title: 'Registration',
-    description: 'Take your time and sign up for free sex',
+    description: 'Take your time and sign up for the fake newsletter',
   },
   newRegister: {
     title: 'New Definition',

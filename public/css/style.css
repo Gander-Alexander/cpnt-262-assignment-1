@@ -11,10 +11,9 @@ body {
 
 ul {
     display: flex;
-    background-color: rgb(179, 176, 164);
+    background-color: rgb(218, 215, 206);
     height: 10vh;
     flex-direction: column;
-    margin-left: 200px;
 }
 
 
@@ -25,7 +24,8 @@ li {
     animation-delay: calc(var(--animation-order) * 200ms);
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
-    
+    list-style: none;
+    margin-left: 200px;
 }
  
 a:hover {
