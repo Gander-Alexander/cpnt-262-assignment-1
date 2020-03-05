@@ -11,7 +11,7 @@ body {
 
 ul {
     display: flex;
-    background-color: rgb(216, 210, 187);
+    background-color: rgb(179, 176, 164);
     height: 10vh;
     flex-direction: column;
     margin-left: 200px;
