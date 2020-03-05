@@ -14,6 +14,7 @@ ul {
     background-color: rgb(216, 210, 187);
     height: 10vh;
     flex-direction: column;
+    margin-left: 200px;
 }
 
 
@@ -24,6 +25,11 @@ li {
     animation-delay: calc(var(--animation-order) * 200ms);
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
+    
+}
+ 
+a:hover {
+  background-color: red;
 }
 
 

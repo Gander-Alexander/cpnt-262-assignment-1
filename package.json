@@ -1,6 +1,9 @@
 {
   "name": "cpnt260-assignemnt-1",
   "version": "1.0.0",
+  "engines": {
+    "node": "^12.16.1"
+  },
   "description": "An assignemnt for unit cpnt260 for sait",
   "main": "app.js",
   "dependencies": {
@@ -13,8 +16,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "start": "node app.js"
+},
   "author": "Richard Avery",
   "license": "ISC"
 }
