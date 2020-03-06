@@ -2,11 +2,16 @@ const path = require('path');
 const express = require('express');
 const ejs = require('ejs');
 const pageInfo = require('./pageInfo');
+const moment = require('moment');
+
 
 const app = express();
 
 app.set('view engine','ejs');
 
+app.locals.dateofYear = () => {
+  return moment().format('YYYY');
+};
 
 app.use(express.urlencoded({ extended: false }));
 
