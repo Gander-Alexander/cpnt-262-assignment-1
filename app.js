@@ -24,6 +24,12 @@ app.get('/gallery',function(req, res) {
   res.render('gallery',pageInfo.gallery);
 });
 
+
+app.get('/gallery/id',function(req, res) {  
+  res.render('gallery-id',pageInfo.galleryId);
+});
+
+
 app.get('/resources',function(req, res) {  
   res.render('resources',pageInfo.resources);
 });
