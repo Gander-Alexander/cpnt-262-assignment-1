@@ -8,11 +8,17 @@
   
 </head>
 <body>
+  <% 
+    if (title == 'Home Page') {
+  %>
+  <%
+    }
+  %>
   <nav>
     <ul class="nav-links">
-      <li class="home" style="--animation-order: 1;"><a href="/">Home Page</a></li>
-      <li class="gallery" style="--animation-order: 2;"><a href="/gallery">Image Gallery</a></li>
-      <li class="resources" style="--animation-order: 3;"><a href="/resources">Resources</a></li>
-      <li class="register" style="--animation-order: 4;"><a href="/register">Register</a></li>
+      <li <% if (title == 'Home Page') {%> class="active" <% } %> style="--animation-order: 1;"><a href="/">Home Page</a></li>
+      <li <% if (title == 'Gallery') {%> class="active" <% } %> style="--animation-order: 2;"><a href="/gallery">Image Gallery</a></li>
+      <li <% if (title == 'Resources') {%> class="active" <% } %> style="--animation-order: 3;"><a href="/resources">Resources</a></li>
+      <li <% if (title == 'Register') {%> class="active" <% } %> style="--animation-order: 4;"><a href="/register">Register</a></li>
     </ul>
   </nav>

@@ -8,11 +8,11 @@ const pageInfo = {
     description: 'Nothing like a sweet gallery to lighten the mood'
   },
   resources: {
-    title: 'Learning Resources',
+    title: 'Resources',
     description: 'Recommended readings for CPNT262',
   },
   register: {
-    title: 'Registration',
+    title: 'Register',
     description: 'Take your time and sign up for the fake newsletter',
   },
   newRegister: {

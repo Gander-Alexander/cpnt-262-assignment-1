@@ -35,13 +35,16 @@ nav {
 a {
   color: rgb(31, 26, 26);
   text-decoration: none;
-  font-size: 30px;
+  font-size: 2vw;
   padding: 8px;
 }
  
-a:hover {
-  background-color: rgb(223, 212, 171);
-  text-align: center;
+li:hover {
+  color: red;
+}
+
+.active {
+  background-color: rgba(255, 166, 0, 0.438);
 }
 
 
@@ -57,13 +60,40 @@ a:hover {
     }
   }
 
+  #regbut {
+    margin-top: 60px;
+    animation: slide 1s ease;
+    width: 13rem;
+    text-align: center;
+    border-radius: 0% 10% 10% 0%;
+    transition: .6s ease;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  #regbut:hover{
+    box-shadow: none;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(-100vw);
+    }
+    to {
+      transform: translateY(0vw);
+    }
+  }
+
+  
+
+
+
   footer {
       position: absolute;
       bottom: 0;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        background-color: rgb(216, 210, 187);
+        background-color: rgba(172, 23, 23, 0.747);
         height: 8.3em;
         width: 100vw;
   }
@@ -73,4 +103,20 @@ a:hover {
     grid-row: 2 / 3;
     margin-top: 1.8em;
    color: rgb(75, 67, 67);
+  }
+  
+  @media screen and (max-width: 600px){
+
+    .nav-links li {
+      margin-left: 10px;
+    }
+    a {
+      font-size: 3vw;
+    }
+
+    #regbut a {
+      font-size: 10vw;
+      color: red;
+    }
+    
   }
