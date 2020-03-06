@@ -7,9 +7,9 @@ const pageInfo = {
     title: 'Gallery',
     description: 'Nothing like a sweet gallery to lighten the mood'
   },
-  resources: {
-    title: 'Resources',
-    description: 'Recommended readings for CPNT262',
+  dilbert: {
+    title: 'Dilbert Comic Section',
+    description: 'Come here for Dilbert comics',
   },
   register: {
     title: 'Register',

@@ -7,45 +7,49 @@ const moment = require('moment');
 
 const app = express();
 
-app.set('view engine','ejs');
+app.set('view engine', 'ejs');
 
+
+// This is the moment code for the year on the footer's copy right section
 app.locals.dateofYear = () => {
   return moment().format('YYYY');
 };
 
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({
+  extended: false
+}));
 
 
-app.get('/',function(req, res) {  
-  res.render('index',pageInfo.index);
+app.get('/', function (req, res) {
+  res.render('index', pageInfo.index);
 });
 
-app.get('/gallery',function(req, res) {  
-  res.render('gallery',pageInfo.gallery);
-});
-
-
-app.get('/gallery/id',function(req, res) {  
-  res.render('gallery-id',pageInfo.galleryId);
+app.get('/gallery', function (req, res) {
+  res.render('gallery', pageInfo.gallery);
 });
 
 
-app.get('/resources',function(req, res) {  
-  res.render('resources',pageInfo.resources);
-});
-
-app.get('/register',function(req, res) {  
-  res.render('register',pageInfo.register);
+app.get('/gallery/id', function (req, res) {
+  res.render('gallery-id', pageInfo.galleryId);
 });
 
 
-app.get('/register/new',function(req, res) {  
-  res.render('register-new',pageInfo.newRegister);
+app.get('/dilbert', function (req, res) {
+  res.render('dilbertC', pageInfo.dilbert);
+});
+
+app.get('/register', function (req, res) {
+  res.render('register', pageInfo.register);
 });
 
 
-app.post('/register/new',function(req, res) {  
-  res.render('register-new',pageInfo.newRegister);
+app.get('/register/new', function (req, res) {
+  res.render('register-new', pageInfo.newRegister);
+});
+
+// I still have yet to make this page work with the css as it does not link for some reason
+app.post('/register/new', function (req, res) {
+  res.render('register-new', pageInfo.newRegister);
 });
 
 
@@ -53,13 +57,13 @@ app.post('/register/new',function(req, res) {
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   res.status(404);
   res.send('404: File Not Found');
 });
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, function(){
+app.listen(PORT, function () {
   console.log(`Listening on port ${PORT}`);
 });
