@@ -40,18 +40,18 @@ a {
 }
 
 li a:hover {
-  color: cornsilk;
+  color: rgb(238, 213, 115);
 }
 
 .active {
-  background-color: cornsilk;
+  border-bottom: 2px solid cornsilk;
 }
 
 .active a:hover {
-  color: rgba(172, 23, 23, 0.747);
+  color: cornsilk;
 }
 
-
+/* Animation for the nav links to have the bouncy animation-------------------------------------------------- */
 @keyframes animateIn {
   0% {
     opacity: 0;
@@ -80,6 +80,7 @@ li a:hover {
   transform: translate(0px, 0px);
 }
 
+/* An animation for the register now button to slide in from the left hand side of the screen----------------- */
 @keyframes slide {
   from {
     transform: translateX(-100vw);
@@ -93,7 +94,7 @@ li a:hover {
 
 
 
-
+/* A nice footer I had made for Gary's gitsass project----------------------------- */
 footer {
   position: absolute;
   bottom: 0;
@@ -102,7 +103,7 @@ footer {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   background-color: rgba(172, 23, 23, 0.747);
   height: 8.3em;
-  width: 100vw;
+  width: fit-content;
 }
 
 .copyright {
@@ -112,6 +113,7 @@ footer {
   color: rgb(75, 67, 67);
 }
 
+/* Allows the to still be legible and not break the screen on the mobile view */
 @media screen and (max-width: 600px) {
 
   .nav-links li {
@@ -127,4 +129,58 @@ footer {
     transition: 1s ease;
   }
 
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+
+/* Dibert Comic page----------------------------------------------------------------------------------------------------- */
+
+#dilb {
+  animation: slide-up .4s ease;
+  margin-left: 10vw;
+  margin-top: 4rem;
+}
+
+#dilb a {
+  
+  font-size: 7rem;
+  transition: .4s ease-in-out;
+}
+
+#dilb a:hover {
+  background-color: rgb(223, 217, 196);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+@keyframes slide-up {
+  0% {
+    transform: translateX(-100vw);
+  }
+  50% {
+    transform: translateX(10vw);
+  }
+}
+
+
+
+@media screen and (max-width: 800px) {
+  #dilb a {
+    margin-left: 0;
+  }
+}
+
+
+/* emdia query for the footer---------------------------------- */
+
+@media screen and (max-width: 2000px) {
+  footer {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  footer {
+    position: relative;
+  }
 }
