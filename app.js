@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const ejs = require('ejs');
 const pageInfo = require('./pageInfo');
+const gallery = require('./gallery')
 const moment = require('moment');
 
 
