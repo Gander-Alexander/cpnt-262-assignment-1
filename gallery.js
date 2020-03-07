@@ -142,4 +142,4 @@
     }
   ]
 
-  // module.exports = gallery;
+  module.imports = gallery;
