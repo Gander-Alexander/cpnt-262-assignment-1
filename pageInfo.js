@@ -16,7 +16,7 @@ const pageInfo = {
     description: 'Take your time and sign up for the fake newsletter',
   },
   newRegister: {
-    title: 'New Definition',
+    title: 'New User',
     description: "Fill out the form to register (doesn't actually work yet)"
   }
 }

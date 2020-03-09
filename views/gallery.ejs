@@ -4,21 +4,34 @@
 </header>
 <p><%= description %></p>
 
-<div class="images">
-<%
-gallery.forEach(function(item){
-%>
-  <img src="<%= gallery.url, gallery.id, gallery.size %>" alt="<%= item.title %>">
-    <p><%= item.title %></p>
-    <p><%= item.credit %></p>
-
-<%
-})
-%>
-</div>
 
 
-<%= item.name %>
+<main>
+       
+  <% 
+  gallery.forEach(element => {
+  %>
+   <figure class="cards">
+    <a href="gallery/<%= element.id  %> ">
+    <img class="images" src="images/sm/<%= element.fileName  %>" alt="<%= element.title %>">
+    </a>
+    <figcaption>
+      <div>
+        <p class="texts"><%= element.title  %></p>
+      </div>
+      <div>
+        <p class="texts">Credit:  <%= element.attribution.credit  %></p>
+      </div>
+      
+      </figcaption>
+  </figure>
+   <%  
+  });  
+  %>
+  
+</main>
+
+
 
 
 

@@ -8,7 +8,6 @@ module.exports = [
         source: 'Lorem Picsum',
         credit: 'André Spieker',
         url:  'https://unsplash.com/photos/8wTPqxlnKM4',
-        size: 'public/images/sm'
       }
     },
     {
@@ -19,7 +18,6 @@ module.exports = [
         source: 'Lorem Picsum',
         credit: 'Thomas Lefebvre',
         url:  'https://unsplash.com/photos/aRXPJnXQ9lU'
-        size: 'public/images/sm'
       }
     },
     {
@@ -30,7 +28,6 @@ module.exports = [
         source: 'Lorem Picsum',
         credit: 'Thomas Lefebvre',
         url:  'https://unsplash.com/photos/34mvN5nt1ls'
-        size: 'public/images/sm'
       }
     },
     {
@@ -41,7 +38,6 @@ module.exports = [
         source: 'Lorem Picsum',
         credit: 'Levi Saunders',
         url:  'https://unsplash.com/photos/NUMlxTPsznM'
-        size: 'public/images/sm'
       }
     },
     {
@@ -52,7 +48,6 @@ module.exports = [
         source: 'Lorem Picsum',
         credit: 'Paula Borowska',
         url:  'https://unsplash.com/photos/OM7CvKnhjfs'
-        size: 'public/images/sm'
       }
     },
     {
@@ -63,7 +58,6 @@ module.exports = [
         source: 'Lorem Picsum',
         credit: 'Alexander Dimitrov',
         url:  'https://unsplash.com/photos/KGy1GFeKBu4'
-        size: 'public/images/sm'
       }
     },
     {
@@ -74,7 +68,6 @@ module.exports = [
         source: 'Lorem Picsum',
         credit: 'Josh Felise',
         url:  'https://unsplash.com/photos/mblYxasm0nk'
-        size: 'public/images/sm'
       }
     },
     {
@@ -85,7 +78,6 @@ module.exports = [
         source: 'Lorem Picsum',
         credit: 'Damir Kotorić',
         url:  'https://unsplash.com/photos/cSQw4uqF_Hc'
-        size: 'public/images/sm'
       }
     },
     {
@@ -96,7 +88,6 @@ module.exports = [
         source: 'Lorem Picsum',
         credit: 'rebecca johnston',
         url:  'https://unsplash.com/photos/nuRYwOJryyk'
-        size: 'public/images/sm'
       }
     },
     {
@@ -107,7 +98,6 @@ module.exports = [
         source: 'Lorem Picsum',
         credit: 'Yamon Figurs',
         url:  'https://unsplash.com/photos/2zlxFmByClI'
-        size: 'public/images/sm'
       }
     },
     {
@@ -118,7 +108,6 @@ module.exports = [
         source: 'Lorem Picsum',
         credit: 'Мартин Тасев',
         url:  'https://unsplash.com/photos/7ALI0RYyq6s'
-        size: 'public/images/sm'
       }
     },
     {
@@ -129,7 +118,6 @@ module.exports = [
         source: 'Lorem Picsum',
         credit: 'Matthew Henry',
         url:  'https://unsplash.com/photos/U5rMrSI7Pn4'
-        size: 'public/images/sm'
       }
     },
     {
@@ -140,7 +128,6 @@ module.exports = [
         source: 'Lorem Picsum',
         credit: 'Samuel Scrimshaw',
         url:  'https://unsplash.com/photos/sseiVD2XsOk'
-        size: 'public/images/sm'
       }
     },
     {
@@ -151,7 +138,6 @@ module.exports = [
         source: 'Lorem Picsum',
         credit: 'Jay Ruzesky',
         url:  'https://unsplash.com/photos/h13Y8vyIXNU'
-        size: 'public/images/sm'
       }
     }
   ]

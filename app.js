@@ -25,14 +25,36 @@ app.get('/', function (req, res) {
   res.render('index', pageInfo.index);
 });
 
+
+
+
+
+
+
+
+
+
+
 app.get('/gallery', function (req, res) {
+  app.locals.gallery = require('./gallery');
   res.render('gallery', pageInfo.gallery);
 });
 
 
-app.get('/gallery/id', function (req, res) {
-  res.render('gallery-id', pageInfo.galleryId);
+app.get('/gallery/:id',function(req, res, next) {
+  for (photo of gallery){
+    if(photo.id == req.params.id){
+      res.render('gallery-id',{title:`${req.params.id}`})
+      return;
+  }}
+  next();
 });
+
+
+
+
+
+
 
 
 app.get('/dilbert', function (req, res) {

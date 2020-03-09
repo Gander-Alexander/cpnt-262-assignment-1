@@ -1,13 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Pacifico', cursive;
 }
+
 
 
 body {
   background-color: cornsilk;
 }
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 4rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 
 nav {
   display: flex;
@@ -55,17 +72,24 @@ li a:hover {
 @keyframes animateIn {
   0% {
     opacity: 0;
-    transform: translateY(-100vh);
+    transform: translateX(-100vh);
   }
 
   80% {
-    transform: translateY(7vh);
+    transform: translateX(7vh);
     opacity: 1;
   }
 }
 
+
+
+
+
+
+/* Style for the registration button on the home page */
 #regbut {
   margin-top: 60px;
+  margin-bottom: 38vh;
   animation: slide 1s ease;
   width: 13rem;
   text-align: center;
@@ -94,24 +118,7 @@ li a:hover {
 
 
 
-/* A nice footer I had made for Gary's gitsass project----------------------------- */
-footer {
-  position: absolute;
-  bottom: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  background-color: rgba(172, 23, 23, 0.747);
-  height: 8.3em;
-  width: fit-content;
-}
 
-.copyright {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  margin-top: 1.8em;
-  color: rgb(75, 67, 67);
-}
 
 /* Allows the to still be legible and not break the screen on the mobile view */
 @media screen and (max-width: 600px) {
@@ -137,19 +144,19 @@ footer {
 
 #dilb {
   animation: slide-up .4s ease;
-  margin-left: 10vw;
   margin-top: 4rem;
+  margin-bottom: 33vh;
 }
 
 #dilb a {
   
-  font-size: 7rem;
+  font-size: 6rem;
   transition: .4s ease-in-out;
 }
 
 #dilb a:hover {
-  background-color: rgb(223, 217, 196);
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  color: crimson;
+  
 }
 
 
@@ -171,16 +178,102 @@ footer {
 }
 
 
-/* emdia query for the footer---------------------------------- */
 
-@media screen and (max-width: 2000px) {
-  footer {
-    width: 100vw;
-  }
+/* Styling for the gallery---------------------------- */
+
+.cards {
+  background-color: rgba(172, 23, 23, 0.747);
+  display: inline-block;
+  margin: 3rem;
+  transition: .3s ease;
+  animation: animate .7s ease-in-out;
 }
 
-@media screen and (max-width: 780px) {
-  footer {
-    position: relative;
+.cards:hover {
+  transform: scale(1.04);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+}
+
+
+
+.texts {
+  text-align: center;
+  font-size: 1rem;
+}
+
+figcaption {
+  margin-bottom: 20px;
+}
+
+
+@keyframes animate {
+from {
+    transform: translateY(100vw);
   }
+  to {
+    
+  }
+}
+/* ------------------------------------------------------- */
+
+/* style for the large id image--------------------------- */
+
+.bigImage {
+  display: flex;
+  align-content: center;
+  margin-bottom: 300px;
+}
+
+.centerImage {
+  margin-left: 10px;
+}
+
+
+.nameAttribute:hover {
+  color: red;
+}
+
+
+/* Style for the register page before the form page--------------- */
+
+.registerText {
+  margin-top: 2vh;
+  margin-bottom: 47vh;
+}
+
+.registerText a:hover {
+  color: crimson;
+}
+
+
+/* ---------------------------------------------------------------- */
+
+/* Style for the register form---------- -------------------------*/
+
+form {
+  margin-bottom: 57vh;
+}
+
+/* -------------------------------------------------------------- */
+
+
+
+
+/* Footer styles============================================ */
+footer {
+  display: absolute;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: rgba(172, 23, 23, 0.747);
+  height: 8.3em;
+  width: fit-content;
+}
+
+.copyright {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  margin-top: 1.8em;
+  color: rgb(75, 67, 67);
 }
